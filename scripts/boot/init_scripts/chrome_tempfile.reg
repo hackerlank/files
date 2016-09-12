@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\http\shell\open\command]
+@="\"C:\\Documents and Settings\\blaketang\\Local Settings\\Application Data\\Google\\Chrome\\Application\\chrome.exe\" --user-data-dir=R:\\Chrome \"%1\""
+[HKEY_CLASSES_ROOT\ftp\shell\open\command]
+@="\"C:\\Documents and Settings\\blaketang\\Local Settings\\Application Data\\Google\\Chrome\\Application\\chrome.exe\" --user-data-dir=R:\\Chrome \"%1\""
+[HKEY_CLASSES_ROOT\https\shell\open\command]
+@="\"C:\\Documents and Settings\\blaketang\\Local Settings\\Application Data\\Google\\Chrome\\Application\\chrome.exe\" --user-data-dir=R:\\Chrome \"%1\""
+[HKEY_CLASSES_ROOT\ChromeHTML\shell\open\command]
+@="\"C:\\Documents and Settings\\blaketang\\Local Settings\\Application Data\\Google\\Chrome\\Application\\chrome.exe\" --user-data-dir=R:\\Chrome \"%1\""    

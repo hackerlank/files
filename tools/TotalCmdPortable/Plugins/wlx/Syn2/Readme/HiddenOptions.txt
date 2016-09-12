@@ -1,0 +1,66 @@
+This file lists SynWrite hidden options, i.e. options not visible in the Options dialog.
+They must be set in file "Syn.ini" in section [Setup].
+Use menu command "Options -- Advanced -- Edit file Syn.ini".
+Bool values have only two possible values: 0 means "off", 1 means "on".
+
+--------------------
+Utf8Buffer=64
+Sets buffer size, in Kb, of UTF-8 detection procedure. Increase it if UTF-8 detection fails on big files.
+
+--------------------
+BkStrip=0
+Bool. Enables to strip names of portable bookmarks, in "Go to portable bookmark" dialog.
+
+--------------------
+Tooltips=1
+Bool. Enables tooltips for long strings in listviews/treeviews.
+
+--------------------
+MaxWordLen=100
+Maximal length of text, which is handled by commands "Find current word next/ prior".
+
+--------------------
+MarkDeletedModified=1
+Bool. Enables, when auto-reload in on, to mark deleted file as modified ("*" char in tab caption).
+
+--------------------
+SyncEditIcon=1
+Bool. Enables greenish gutter icon for command "Toggle SyncEditing mode".
+
+--------------------
+KeyComboIgnoreCtrl=1
+Bool. Enables to ignore Ctrl/Alt/Shift modifiers in key combinations (e.g. [Ctrl+Q,Ctrl+A]), in 2nd/3rd/etc parts of combo.
+
+--------------------
+MovX=20
+MovY=10
+These options specify horiz. and vert. offsets, used by 4 commands: "Move cursor left/right/up/down by <N> chars".
+
+--------------------
+SessionMaxFiles=0
+If set to positive value N, then additional confirmation will be shown on session saving/loading: "Session contains many files (more than N). Are you sure you want to save/load it?"
+
+--------------------
+[Tree]
+Click=2
+Sets action for dbl-click of syntax-tree nodes. 0: none, 1: expand/collapse node, 2: put caret at range start, 3: select entire range.
+
+--------------------
+PyChangeDelay=3000
+Delays (in msec) for Python plugins on_change_slow event.
+
+--------------------
+HintScroll=0
+Bool. Enables hint "Line NNNN" for editor vertical scrollbar, when scrollbar thumb is dragged.
+
+--------------------
+[ACP]
+HintDelay=1500
+Delay (in msec) of editor hints of auto-completion feature.
+
+--------------------
+Items of command-plugins can be hidden in editor context menu (not in the main menu "Tools"). To do this, add "-" char after ";" char at end of lines in [Commands] section of SynPlugins.ini file (use command "Options - Advanced - Edit file SynPlugins.ini").
+Example:
+  Plugin Manager\Edit plugin...=py:syn_plugin_manager;menu_edit;;;-
+
+--------------------
