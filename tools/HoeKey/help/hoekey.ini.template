@@ -1,0 +1,43 @@
+;  Simple Example HoeKey config
+;
+; Key Modifiers:
+; ~=windows, _=shift, ^=ctrl, @=alt
+
+=Rem|-- General --
+
+~Q=Config			; Configure HoeKey
+
+~N=Run|notepad.exe		; Notepad
+
+~I=Run|http://www.google.com	; Open web browser to Google
+
+~S=Run|cmd.exe			; Command shell
+
+~_S=Run|cmd.exe|||%c		; Command shell in current directory
+
+~_E=Run|explorer.exe %c		; Explorer in current directory
+
+~4=Transparency			; Set current window to be
+=AlwaysOnTop			; transparent and on top
+
+
+=Rem|-- Volume --
+
+_~1=Volume||0   ; Mute
+_~2=Volume||33  ; 33%
+_~3=Volume||66  ; 66%
+_~4=Volume||100	; Full
+
+
+=Rem|-- Winamp --
+
+~W=Run|c:\program files\Winamp\winamp.exe ; start/activate
+
+~Z=Msg|Winamp v1.x|273|40044	; previous song
+~X=Msg|Winamp v1.x|273|40045	; play
+~C=Msg|Winamp v1.x|273|40046	; pause
+~V=Msg|Winamp v1.x|273|40048	; next song
+
+=Rem|-- Misc --
+Start=MsgBox|Welcome to HoeKey!\r\n\r\n\r\nPress Windows+Q to open the configuration window.	; Show welcome message on startup
+

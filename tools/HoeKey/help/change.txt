@@ -1,0 +1,22 @@
+If you have comments and suggestions I welcome them. My email address is in the about screen of HoeKey.
+Version .next:
+
+    1.18: (just the exe is available for now.)
+        New function: ClickThrough - make clicks go through a window (handy with always on top + transparency)
+        Fix %c to get curdir from windows explorer for Windows 7 (and maybe Vista...)
+        Fix %c to get curdir from current process. this will only work for 32 bit apps now :( 
+    1.16: (just the exe is available for now.)
+        New function: WaveVolume - Set wave volume instead of master volume
+        New function: Clip - copy text to clipboard
+        %p = current clipboard as plaintext (useful in keys function)
+        %P = current clipboard as plaintext, removing returns/newlines
+        Color remarks in hoekey list (tell me if you don't like this)
+        Removed: stack/unstack/cycle functions - email me if you use these and i'll put them back
+        Fix for keys from clipboard with backslashes (what?!) 
+    1.15:
+        Added keys: \f for page up, \g for page down
+        %s gets filenames too (so you can highlight something in explorer, then edit it with "run|notepad %s"
+        Add ability to specify hex for parameters (specify like 0xFEED, negatives like -0xFEED)
+        Add color keying to transparency, e.g. ~t=Transparency||50|0xFF0000 ; pure red is transparent
+        Volume sets master volume instead of wave - please email me if you don't like this :)
+        Fix so volume can go to 100% 

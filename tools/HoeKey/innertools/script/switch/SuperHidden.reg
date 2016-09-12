@@ -1,0 +1,18 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\Directory\Background\shellex\ContextMenuHandlers\SuperHidden]
+@="{00000000-0000-0000-0000-000000000012}"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000012}\InProcServer32]
+@=hex(2):25,53,79,73,74,65,6d,52,6f,6f,74,25,5c,73,79,73,74,65,6d,33,32,5c,73,\
+  68,64,6f,63,76,77,2e,64,6c,6c,00
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000012}\Instance]
+"CLSID"="{3f454f0e-42ae-4d7c-8ea3-328250d6e272}"
+
+[HKEY_CLASSES_ROOT\CLSID\{00000000-0000-0000-0000-000000000012}\Instance\InitPropertyBag]
+"method"="ShellExecute"
+"Param1"="D:\\Tools\\HoeKey\\SuperHidden.vbs"
+"command"="Show/Hide"
+"CLSID"="{13709620-C279-11CE-A49E-444553540000}"
